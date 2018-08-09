@@ -1,0 +1,7 @@
+{
+  "name": "OtakuDate",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
