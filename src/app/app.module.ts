@@ -13,6 +13,9 @@ import { Items } from '../mocks/providers/items';
 import { Settings, User, Api } from '../providers';
 import { MyApp } from './app.component';
 
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.
 export function createTranslateLoader(http: HttpClient) {
@@ -33,7 +36,17 @@ export function provideSettings(storage: Storage) {
     option4: 'Hello'
   });
 }
-
+const firebaseAuth = {
+  production: false,
+  firebase: {
+    apiKey: '<your-key>',
+    authDomain: '<your-project-authdomain>',
+    databaseURL: '<your-database-URL>',
+    projectId: '<your-project-id>',
+    storageBucket: '<your-storage-bucket>',
+    messagingSenderId: '<your-messaging-sender-id>'
+  }
+};
 @NgModule({
   declarations: [
     MyApp
@@ -41,6 +54,8 @@ export function provideSettings(storage: Storage) {
   imports: [
     BrowserModule,
     HttpClientModule,
+    AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
+    AngularFireModule.initializeApp(firebaseAuth),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

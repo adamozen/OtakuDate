@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "778430003359",
+    "firebase_url": "https://otakudateproject.firebaseio.com",
+    "project_id": "otakudateproject",
+    "storage_bucket": "otakudateproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778430003359:android:4cea137b622f5923",
+        "android_client_info": {
+          "package_name": "io.otaku.date"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778430003359-2klonof7j847h0i64racmr7vv84umno6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.otaku.date",
+            "certificate_hash": "f48eb3f60244cf85b7bef82c1f264dfe710d4aa7"
+          }
+        },
+        {
+          "client_id": "778430003359-d9l4beea6kmugovm2pvgfa3v25gu7j26.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqwtDKcEP-eW7G0DjFU7cDna7E4lZOyC8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "778430003359-d9l4beea6kmugovm2pvgfa3v25gu7j26.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
